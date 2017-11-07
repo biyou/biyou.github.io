@@ -1,1 +1,40 @@
-{"info":{"title":"My Test","description":"My Test","version":"1.0.0"},"openapi":"3.0.0"}
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "My Test",
+    "description": "My Test",
+    "license": {
+      "name": "Mozilla 2.0",
+      "url": "https://www.mozilla.org/en-US/MPL/2.0/"
+    },
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/list": {
+      "get": {}
+    },
+    "/get": {
+      "get": {}
+    },
+    "/del": {
+      "get": {}
+    }
+  },
+  "components": {
+    "schemas": {
+      "Term": {
+        "title": "Root Type for Term",
+        "description": "The root of the Term type's schema.",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "nature": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
